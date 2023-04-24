@@ -1,0 +1,421 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+*{
+  box-sizing: border-box;
+  transition: all .2s ease 0s;
+}
+body {
+  max-width: 100%;
+  margin: 0 ;
+  background-color: white;
+  font-weight: 600;
+  z-index: 1;
+  color: #333333;
+  background-image:url('./assets/images/back4.png');
+  background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header{
+  width : 100%;
+  position: sticky;
+  top:0;
+  left:0;
+  right:0;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: rgba(11,184 , 101, 0.7);
+  height: 130px;
+  
+
+}
+
+.header p {
+  color: #333333;;
+  font-size: 1.8em;
+  border: 0.1px solid white;
+  padding: 2% 2% 2% 2%;
+  border-radius:35px;
+}
+
+.header-right-container{
+
+    width : 46%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.header button{
+
+  padding: 0 5% 0 5%;
+  margin: auto 0;
+  background:none;
+  border: 1px solid white;
+  border-radius:15px;
+  color: white;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.container{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;;
+
+}
+
+.div-container{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+.home-top-container{
+  height: 100%;
+  width : 50%;
+  text-align: start;
+  padding-left:1%;
+  margin-top: 5%;
+}
+
+.home-top-container h1{
+  font-size: 3em;
+  color:white;
+
+}
+
+.home-top-container p {
+  background-color: #333333;;
+  opacity: 80%;
+  color : white;
+  padding: 2%;
+  border-radius:15px;
+  font-size:1.6em;
+  width: 89%;
+}
+
+#span{
+  background-color: #0bb865;
+  color: white;
+  border-radius:60px;
+  opacity: 80%;
+}
+
+
+
+.home-right-container{
+  width: 50%;
+  margin-top:4%;
+  height: 100%;
+  /*background-color: rgba(51, 51, 51, 0.7);*/
+  /*background-image: url('./assets/images/green.jpg');*/
+  background-size: cover;
+  opacity: 89%;
+  border-radius: 15px;
+  margin-right:1%;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;;
+  padding-right:1%;
+  
+}
+
+.home-right-container p{
+    font-size: 1.2em;
+    text-align:right;
+}
+
+.form{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  width: 60%;
+  border : 1px solid #333333;
+  border-radius: 15px;
+}
+
+.form input{
+  margin: 0 auto 3% auto;
+  padding: 2%;
+  width: 60%;
+  font-size: 1.4em;
+}
+
+.section-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-login p {
+  font-size: 1.8em;
+  color: #0bb865;
+}
+
+.section-login h2{
+  
+  font-size: 1.8em;
+  color: #0bb865;
+  border: 1px solid red;
+}
+
+/* CSS card component*/
+
+.card{
+  border-top: 1px solid #0bb865;
+  border-left:1px solid #0bb865;
+  background-color: rgba(51,51,51, 0.8);
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  position:relative;
+  box-shadow: 8px 8px 2px 1px rgba(25, 22, 22, 0.2);
+  border-radius:15px;
+}
+
+.card:hover{
+  transform:scale(1.1)
+}
+
+.card-image-container{
+
+  width:40%;
+ 
+  
+}
+
+.card-image-container img{
+  width: 100%;
+  height: 100%;
+  border-radius:15px;
+}
+
+.infos-container{
+  
+  width:40%;
+  position:relative;
+
+}
+
+.icon-text{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  color: white;
+}
+
+.icon-text svg{
+
+  margin: auto;
+  font-size:1.7em;
+  color : white;
+}
+
+.icon-text p{
+  width: 80%;
+  text-align:start;
+  color:white;
+}
+
+#nom-prenom{
+  width: 85%;
+color: white;
+  text-align: start;
+  margin:0 auto;
+  
+}
+
+#ville-pays{
+  text-align:start;
+  width: 85%;
+  padding-left:8%;
+  width: 50%;
+  padding:2%;
+  margin-left:5%;
+  border-radius:15px;
+  background-color: #0bb865;
+  color:black;
+}
+
+.service{
+  position:absolute;
+  top:0;
+  right:0;
+  background-color: white;
+  border-radius:15px;
+  padding:1%;
+  color: #0bb865;;
+}
+
+.admin-card-button-container{
+  position:absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 40%;
+ 
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  
+}
+
+.admin-card-button-container button{
+  padding: 2%;
+  background-color: #0bb865;
+  color: white;
+  border: none;
+}
+
+.home-card-container{
+
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: center;
+  padding-bottom:2%;
+}
+
+.home-top-container{
+
+  padding-bottom: 1%;
+}
+
+#bonjour{
+  padding: 1.5%;
+  width: 50%;
+  font-size:1.3em;
+  color: white;
+  background-color: #0bb865;
+  border-radius: 15px;
+  border: none;
+  cursor:pointer;
+  margin:2% auto;
+}
+
+.container-bis{
+
+  height: 72%;
+}
+
+#end{
+  justify-content: flex-end;
+}
+
+.list-container{
+  width: 100%;
+  height:70vh;
+ 
+  overflow:scroll;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+.header img{
+  border-radius:80px;
+  width: 20%;
+  height: 80%;
+}
+
+.search-bar{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content: center;
+  height:10vh;
+}
+
+#search-bar{
+  width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:space-evenly;
+
+}
+
+#search-bar label{
+  width: 30%;
+  padding: 1% 0 1% 0;
+  border: 1px solid blue;
+  border: 1px solid #0bb865;
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px 1px rgba(25, 22, 22, 0.2);
+}
+
+#search-bar  input{
+  border: 1px solid #0bb865;
+  border-radius:15px;
+  margin-left:2%;
+  width: 60%;
+  padding-top:1%;
+  padding-bottom: 1%;
+ 
+  
+}
+
+#search-bar select{
+  width:30%;
+  padding: 1% 0 1% 0;
+  border: 1px solid #0bb865;
+  border-radius: 15px;
+  margin-left: 2%;
+  color : #333333;
+}
+
+.admin-form{
+  border: 1px solid #0bb865;;
+  border-radius:15px;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content:space-evenly;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.admin-form input{
+  width: 50%;
+  margin: 1% auto;
+  border-radius: 15px;
+  border: 1px solid #333333;
+  padding: 1%;
+}
+
+.admin-form select{
+  width: 50%;
+  margin: 2% auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
